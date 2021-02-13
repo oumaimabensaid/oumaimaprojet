@@ -1,0 +1,217 @@
+<html>
+<head>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+ 
+<script type="text/javascript" language="javascript">
+ 
+<!--
+
+function VerifMail()
+{
+	a = document.Verif.Mail.value;
+	valide1 = false;
+	for(var j=1;j<(a.length);j  ) {
+		if(a.charAt(j)=='@') {
+			if(j<(a.length-4)) {
+				for(var k=j;k<(a.length-2);k  ) {
+					if(a.charAt(k)=='.') valide1=true;
+				}
+			}
+		}
+	}
+	
+	if(valide1==false) { 
+		alert("Veuillez saisir une adresse email valide.");
+	return valide1;
+	}
+
+//-->
+</script>
+<script language="JavaScript">
+function verifMail(adresse){
+if (adresse=="")   {
+alert ("vous n'avez pas saisie votre adresse");
+document.forms[0].email.focus();
+return false ;}
+arob= adresse_email.indexOf("@");
+if (arob==-1) {
+alert ("adresse incorrecte (pas de @)" );
+document.forms[0].email.value="";
+document.forms[0].email.focus();
+return false ;}
+site=adresse.substring(arob+1)
+if (site== "ens-lyon.fr )
+{return confirm ('d\'accord');}
+else {alert ("site="+site+"incorrecte"); return false ;}} 
+
+function validation()
+{
+var expressionReguliere = /^(([^<>()[]\.,;:s@]+(.[^<>()[]\.,;:s@]+)*)|(.+))@(([[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}])|(([a-zA-Z-0-9]+.)+[a-zA-Z]{2,}))$/;
+document.getElementById(resultat).innerHTML = ;
+if (expressionReguliere.test(document.getElementById(email).value))
+{
+document.getElementById(resultat).innerHTML = "L'adresse mail est valide";
+document.getElementById(resultat).style.color = green;
+}
+else
+{
+document.getElementById(resultat).innerHTML = "L'adresse mail n'est pas valide";
+document.getElementById(resultat).style.color = red;
+}
+return false;
+}
+
+
+
+ function arobaceok(EMAIL) { var a=document.forms[0].EMAIL.value; var test="" + a; for(var k = 0; k < test.length;k++) { var c = test.substring(k,k+1); if(c == "@") { return true; } } alert("Votre E-mail, Merci"); return false; }  </script>
+<link rel="stylesheet" href="image.css">
+<link rel="stylesheet" href="bouton.css">
+<title> Compte | Beauty shop </title>
+
+<!--
+ <script type="text/javascipt" >
+function verifMail(a){
+testm=false;
+for (var j=1 ; j<(a.length);j++){
+if (a.charAt(j)=='@'{ 
+for (var k=j ; k<(a.length-2) ; k++) {
+if (a.charAt(k)=='.') testm = true;}}}
+if (testm==false) alert('Votre adresse e-mail est incorrecte.');
+else alert('Votre adresse e-mail semble correcte.'); 
+return testm; } 
+</script>
+</head>
+-->
+<!-- 
+if (adresse=="")   {
+alert ("vous n'avez pas saisie votre adresse");
+document.forms[0].email.focus();
+return false ;}
+arob= adresse_email.indexOf("@");
+if (arob==-1) {
+alert ("adresse incorrecte (pas de @)" );
+document.forms[0].email.value="";
+document.forms[0].email.focus();
+return false ;}
+site=adresse.substring(arob+1)
+if (site== "ens-lyon.fr )
+{return confirm ('d\'accord');}
+else {alert ("site="+site+"incorrecte"); return false ;}} 
+-->
+
+</script>
+ <link rel="stylesheet" type="text/css" href="fich.css">
+</head>
+
+<body style="background-color:white;">
+<div> 
+  <a href ="" > <img src="kisspng-shopping-cart-computer-icons-e-commerce-add-to-cart-button-5ac18976812096.9625607015226330785289.png"  title="mon panier" height="40px" width="40px"/></a>
+<a href ="connexion.html" > <img src="118781.png"  title="mon compte" height="40px" width="40px"/></a> 
+<img src="nelly_beautyshop_logo_v2 (1).svg" width =100% height= 150  border=1 />
+</div>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Brand -->
+  <a class="navbar-brand" href="projetcp1.html">Beauty shop </a>
+
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Maquillage
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="yeux.html">Yeux</a>
+        <a class="dropdown-item" href="ongles.html">Ongles</a>
+        <a class="dropdown-item" href="teint.html">Teint</a>
+		<a class="dropdown-item" href="levres.html">Levres</a>
+		<a class="dropdown-item" href="acessoires.html">Parfums</a>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="sante.html">Santé</a>
+    </li>
+	
+  <li class="nav-item">
+      <a class="nav-link" href="beaute.html">Astuce Beauté</a>
+    </li>
+    <!-- Dropdown -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Cuisine
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="base1.html">Bases</a>
+        <a class="dropdown-item" href="plats1.html">Plats Principales</a>
+        <a class="dropdown-item" href="dessert.html">Desserts</a>
+      </div>
+    </li>
+	
+	</ul>
+	<ul align="right" class="navbar-nav">
+	<li >
+	  <input class="form-control mr-sm-2" type="text" placeholder="Search">
+	  </li>
+	  <li>
+    <button class="btn btn-success" type="submit">Search</button>
+	</li>
+  </ul>
+</nav>
+</br>
+</br>
+<div style="background-color:white;">
+<h1 align="center"><i><font color="#370D21">CONNECTEZ-VOUS À VOTRE COMPTE </h1>
+</div>
+         <form  name =" formulaire"  ><center> <div>
+		     <TABLE BORDER=0 align = center  width =70% >
+
+
+<TR>
+<TD>Adresse email</TD>
+<TD>
+<input  type="email" name="email" > 
+</TD>
+</TR>
+
+<TR>
+<TD>Mot de passe</TD>
+<TD>
+<INPUT type="password" name="mot de passe">
+</TD>
+</TR>
+<TR>
+<TD COLSPAN=2>
+<input type="submit" value="Vérifier" >
+</TD>
+</TR>
+
+</TABLE >
+
+<center><a href="formulaire.html" /> Pas de compte ? Créez-en un</center>
+
+</FORM>
+
+<br><br><br><br><br><br><br><br>
+
+
+ </div>
+ <div align="right" >
+ <style > 
+li { display: inline;} 
+</style>
+<div style="background-color:pink;">
+<p align="right">  <b><i><font  color ="#370D21" size ="+2" >Abonnez-vous</font> </i></p></div>
+ <li> <a href ="https://www.facebook.com" ><img src="Facebook-icon-1.png" title="go to Facebook" height="40px" width="40px"/></a> </li>
+ <li> <a href ="https://www.youtube.com" ><img src="YouTubeArrow3.png" title="go to Youtube" height="40px" width="40px"/></a> </li>
+ <li> <a href ="https://www.instagram.com" ><img src="1491579608-yumminkysocialmedia16_83110.png" title="go to Instagram" height="40px" width="40px" /></a> </li>
+ <li> <a href ="https://www.twitter.com" ><img src="apps.25795.9007199266244427.1eecfb96-6786-4a6d-8a9f-955c3d6a3907.png" title="go to Twitter" height="40px" width="40px" /></a> </li>
+  
+  </div> 
+</body>
+</html>
